@@ -1,6 +1,6 @@
 <?php
 
-public class Unidade {
+class Unidade {
 	
 	private $id;
 	private $nome;
@@ -129,7 +129,7 @@ public class Unidade {
 	  
 	 /**
 	 * ...
-	 * outros métodos de abstração de banco
+	 * outros mï¿½todos de abstraï¿½ï¿½o de banco
 	 * ...
 	 *
 	 */
