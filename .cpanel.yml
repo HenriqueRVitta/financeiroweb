@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/user/public_html/
+    - export DEPLOYPATH=/home/hrvinfor/public_html/financeiro/
     - /bin/cp index.php $DEPLOYPATH
     - /bin/cp login.html $DEPLOYPATH
     - /bin/cp -R controller $DEPLOYPATH
