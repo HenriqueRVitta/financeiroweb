@@ -67,7 +67,7 @@ $divhidden = "hidden='hidden'";
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Meu Financeiro - Login 222</title>
+  <title>Meu Financeiro - Login</title>
 
   <!-- Custom fonts for this template-->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
