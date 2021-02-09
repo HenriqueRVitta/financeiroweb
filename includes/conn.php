@@ -3,8 +3,8 @@ date_default_timezone_set('America/Sao_Paulo');
 
 $dbhost     = "localhost";
 $dbname     = "hrvinfor_adm";
-$dbuser     = "root";
-$dbpass     = "vitta";
+$dbuser     = "hrvinfor_vitta";
+$dbpass     = "hvitta2013";
 $dbname_main = "hrvinfor_adm";
 
 
