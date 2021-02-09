@@ -1,12 +1,3 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/hrvinfor/public_html/financeiro/
-    - /bin/cp index.php $DEPLOYPATH
-    - /bin/cp login.html $DEPLOYPATH
-    - /bin/cp -R controller $DEPLOYPATH
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R img $DEPLOYPATH
-    - /bin/cp -R includes $DEPLOYPATH
-    - /bin/cp -R model $DEPLOYPATH
-    - /bin/cp -R view $DEPLOYPATH
