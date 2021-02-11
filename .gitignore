@@ -1,8 +1,7 @@
 # CakePHP 3
 
 /vendor/*
-/config/app.php
-/includes/conn.php
+/includes/*
 
 /tmp/cache/models/*
 !/tmp/cache/models/empty
