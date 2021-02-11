@@ -7,6 +7,5 @@ deployment:
     - /bin/cp -R controller $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R img $DEPLOYPATH
-    - /bin/cp -R includes $DEPLOYPATH
     - /bin/cp -R model $DEPLOYPATH
     - /bin/cp -R view $DEPLOYPATH

@@ -123,13 +123,6 @@ $divhidden = "hidden='hidden'";
                       Login
                     </a>-->
                     
-                    <hr>
-                    <a href="../index.php" class="btn btn-google btn-user btn-block">
-                      <i class="fab fa-google fa-fw"></i> Login do Google
-                    </a>
-                    <a href="../index.php" class="btn btn-facebook btn-user btn-block">
-                      <i class="fab fa-facebook-f fa-fw"></i> Login do Facebook
-                    </a>
                   </form>
                   <hr>
                   <div class="text-center">
