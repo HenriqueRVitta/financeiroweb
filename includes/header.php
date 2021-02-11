@@ -16,6 +16,7 @@
   <meta name="author" content="">
 
   <title>Meu Financeiro - Dashboard</title>
+  <link rel="icon" href="/financeiro/img/hrv.ico" type="image/x-icon">
 
   <!-- Custom fonts for this template-->
   <link href="/financeiro/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

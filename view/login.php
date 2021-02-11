@@ -68,6 +68,7 @@ $divhidden = "hidden='hidden'";
   <meta name="author" content="">
 
   <title>Meu Financeiro - Login</title>
+  <link rel="icon" href="../img/hrv.ico" type="image/x-icon">
 
   <!-- Custom fonts for this template-->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -126,10 +127,10 @@ $divhidden = "hidden='hidden'";
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="small" href="forgot-password.html">Esqueceu a Senha ?</a>
+                    <a class="small" href="forgot-password.php" target="_blank">Esqueceu a Senha ?</a>
                   </div>
                   <div class="text-center">
-                    <a class="small" href="register.html">Solicitar acesso para avalia&ccedil;&atilde;o !</a>
+                    <a class="small" href="register.php" target="_blank">Solicitar acesso para avalia&ccedil;&atilde;o !</a>
                   </div>
                 </div>
               </div>
