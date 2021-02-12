@@ -1,7 +1,7 @@
 # CakePHP 3
 
 /vendor/*
-#/includes/*
+/includes/*
 
 /tmp/cache/models/*
 !/tmp/cache/models/empty
