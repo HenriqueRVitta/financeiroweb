@@ -1,19 +1,18 @@
 <?php
 
-/*
+
 $dbhost     = "localhost";
 $dbname     = "hrvinfor_adm";
 $dbuser     = "root";
 $dbpass     = "vitta";
 $dbname_main = "hrvinfor_adm";
-*/
-
+/*
 $dbhost     = "localhost";
 $dbname     = "hrvinfor_adm";
 $dbuser     = "hrvinfor_vitta";
 $dbpass     = "hvitta2013";
 $dbname_main = 'hrvinfor_adm';
-
+*/
 
 // database connection
 try {
