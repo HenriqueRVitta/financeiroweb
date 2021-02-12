@@ -1,5 +1,8 @@
 
 <?php
+
+date_default_timezone_set('America/Sao_Paulo');
+
 $teste = 0;
 
 if(isset($_POST['FirstName']) && !empty($_POST['FirstName'])) {
@@ -19,7 +22,7 @@ if(isset($_POST['FirstName']) && !empty($_POST['FirstName'])) {
   body {
   margin:0px;
   font-family:Verdane;
-  font-size:12px;
+  font-size:14px;
   color: #666666;
   }
   a{
@@ -34,7 +37,7 @@ if(isset($_POST['FirstName']) && !empty($_POST['FirstName'])) {
     <html>
         <table width='510' border='1' cellpadding='1' cellspacing='1'>
             <tr>
-              <td>
+              <td>DADOS PARA TESTE NO FINANCEIRO WEB</td>
             <tr>
               <td width='500'>Nome: $nome</td>
               </tr>
