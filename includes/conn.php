@@ -1,5 +1,5 @@
 <?php
-date_default_timezone_set('America/Sao_Paulo');
+
 /*
 $dbhost     = "localhost";
 $dbname     = "hrvinfor_adm";
