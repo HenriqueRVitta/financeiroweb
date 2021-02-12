@@ -32,7 +32,7 @@ if(isset($_POST['FirstName']) && !empty($_POST['FirstName'])) {
   }
   </style>
     <html>
-        <table width='510' border='1' cellpadding='1' cellspacing='1' bgcolor='#CCCCCC'>
+        <table width='510' border='1' cellpadding='1' cellspacing='1'>
             <tr>
               <td>
             <tr>
