@@ -8,7 +8,7 @@ if(isset($_POST['FirstName']) && !empty($_POST['FirstName'])) {
   $sobrenome = $_POST['LastName'];
   $email = $_POST['InputEmail'];
   $senha = $_POST['InputPassword'];
-  $assunto = "Solicitação Acesso Financeiro WEB";
+  $assunto = "Acesso ao Financeiro WEB";
   $data_envio = date('d/m/Y');
   $hora_envio = date('H:i:s');
 
@@ -36,24 +36,24 @@ if(isset($_POST['FirstName']) && !empty($_POST['FirstName'])) {
             <tr>
               <td>
             <tr>
-              <td width='500'>Nome:$nome</td>
+              <td width='500'>Nome: $nome</td>
               </tr>
               <tr>
-              <td width='320'>SobreNome:<b>$sobrenome</b></td>
+              <td width='320'>SobreNome:<b> $sobrenome</b></td>
       </tr>
        <tr>
-                  <td width='320'>Email:<b>$email</b></td>
+                  <td width='320'>Email:<b> $email</b></td>
         </tr>
        <tr>
-                  <td width='320'>Senha:$senha</td>
+                  <td width='320'>Senha: $senha</td>
                 </tr>
                 <tr>
-                  <td width='320'>Mensagem:$assunto</td>
+                  <td width='320'>Mensagem: $assunto</td>
                 </tr>
             </td>
           </tr>
           <tr>
-            <td>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></td>
+            <td>Este e-mail foi enviado em <b>$data_envio</b> as <b>$hora_envio</b></td>
           </tr>
         </table>
     </html>
@@ -67,7 +67,7 @@ $assunto = "Contato pelo Site - Acesso Financeiro WEB";
 // Indicando que o formato do e-mail é html
 $headers  = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-    $headers .= 'From: $nome'.' '.'$sobrenome <$email>';
+    $headers .= 'From: <$nome> <$sobrenome> <$email>';
 
 
 $enviaremail = mail($destino, $assunto, $arquivo, $headers);
