@@ -3,6 +3,13 @@
 		header('Location: ../login.php');
 		exit;
 	}
+
+  $disabled = "";
+
+  if($_SESSION['perfil'] == "Consulta") {
+    $disabled = " disabled ";
+  }
+
   
 ?>
 <!DOCTYPE html>
@@ -93,6 +100,10 @@
         Menus
       </div>
 
+      <?php 
+      if(empty($disabled)) {
+
+      ?>
       <!-- Nav Item - Arquivos Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseArquivos" aria-expanded="true" aria-controls="collapsePages">
@@ -102,10 +113,10 @@
         <div id="collapseArquivos" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Contas a Pagar:</h6>
-            <a class="collapse-item" href="register.html">Documentos a Pagar</a>
+            <a class="collapse-item" href="#">Documentos a Pagar</a>
             <div class="collapse-divider"></div>
             <h6 class="collapse-header">Contas a Receber:</h6>
-            <a class="collapse-item" href="404.html">Documentos a Receber</a>
+            <a class="collapse-item" href="#">Documentos a Receber</a>
             <div class="collapse-divider"></div>
             <h6 class="collapse-header">Cadastros:</h6>
             <a class="collapse-item" href="/financeiro/view/usuarios/index.php">Usu&aacute;rios</a>
@@ -114,6 +125,9 @@
         </div>
       </li>
 
+      <?php 
+        }
+      ?>
 
       <!-- Nav Item - Tables
       <li class="nav-item">
@@ -180,6 +194,10 @@
                 </form>
               </div>
             </li>
+
+            <?php 
+            if(empty($disabled)) {
+            ?>
 
             <!-- Nav Item - Alerts -->
             <li class="nav-item dropdown no-arrow mx-1">
@@ -285,6 +303,9 @@
                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
               </div>
             </li>
+            <?php 
+            }
+            ?>
 
             <div class="topbar-divider d-none d-sm-block"></div>
 

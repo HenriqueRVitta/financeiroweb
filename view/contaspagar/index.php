@@ -7,6 +7,11 @@ require_once("../../includes/db.php");
 	
 require_once '../../includes/header.php';
 
+  $disabled = "";
+
+  if($_SESSION['perfil'] == "Consulta") {
+    $disabled = " disabled ";
+  }
 
 ?>
 
@@ -24,7 +29,7 @@ h1 {
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-2 text-gray-800">Contas a Pagar</h1>
-            <a href="edit.php?id=0" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-newspaper fa-sm text-white-50"></i> Novo Lan&ccedil;amnto</a>
+            <a href="edit.php?id=0" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm <?php echo $disabled; ?>"><i class="fas fa-newspaper fa-sm text-white-50"></i> Novo Lan&ccedil;amnto</a>
           </div>
 
 	    	<form class="user" name='indextcontaspagar' method='POST' action='#'>
@@ -118,12 +123,12 @@ h1 {
 							}
 							
 							print "<td align='center'>
-			                  <a href='edit.php?id=".$row->id."' class='btn btn-success btn-circle btn-sm'>
+			                  <a href='edit.php?id=".$row->id."' class='btn btn-success btn-circle btn-sm <?php echo $disabled; ?>'>
 			                    <i class='fas fa-edit'></i>
 			                  </a>
 							</td>";
 							print "<td align='center'>
-			                  <a href='delete.php?id=".$row->id."' class='btn btn-danger btn-circle btn-sm'>
+			                  <a href='delete.php?id=".$row->id."' class='btn btn-danger btn-circle btn-sm <?php echo $disabled; ?>'>
 			                    <i class='fas fa-trash'></i>
 			                  </a>
 							</td>";
