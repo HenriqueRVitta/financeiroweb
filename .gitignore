@@ -2,6 +2,7 @@
 
 /vendor/*
 /includes/*
+/includes/conn.php
 
 /tmp/cache/models/*
 !/tmp/cache/models/empty
