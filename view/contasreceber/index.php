@@ -93,7 +93,10 @@ h1 {
                		$sql = $db_main->query("select * from contasreceber where unidade = '".$_SESSION['idempresa']."'".$where);
                		//$dados = $sql->fetch(PDO::FETCH_OBJ);
                		$rows = $sql->rowCount();
-               		
+
+                   $valorPago = 0;
+                   $valorAPagar = 0;
+        
 					if($rows >= 1) {
 		
 						while($row = $sql->fetch(PDO::FETCH_OBJ)) {
@@ -104,7 +107,13 @@ h1 {
 							$pagto = $datapagto->format('d-m-Y');
 							if($row->datavencto=="0000-00-00 00:00:00") { $vencto = ""; }
 							if($row->datapagto=="0000-00-00 00:00:00") { $pagto = ""; }
-							
+
+              if($row->datapagto=="0000-00-00 00:00:00") { 
+                $valorAPagar+=$row->valor; 
+              } else {
+                $valorPago+=$row->valor;
+              }
+
  							print "<tt>";
 							print "<td>".$vencto."</td>";
 							print "<td>".$row->cliente."</td>";
@@ -134,6 +143,27 @@ h1 {
               </div>
             </div>
           </div>
+
+          <!-- Totalização -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Totalização:</h6>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-2">
+                    Valor Recebido:
+                    <input type="number" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control" id="valorpago" placeholder="" name="valorpago" value="<?php echo $valorPago;?>" disabled>
+                  </div>
+                  <div class="col-sm-2">
+                    Valor A Receber:
+                    <input type="number" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control" id="valorapagar" placeholder="" name="valorapagar" value="<?php echo $valorAPagar;?>" disabled>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+
 
         </div>
         <!-- /.container-fluid -->
